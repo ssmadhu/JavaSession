@@ -13,7 +13,6 @@ public class EmailService {
     public void sendEmail(EmailInfo emailInfo, User from, User to){
         try {
             MailServer mailserver = new MailServer("smtp.gmail.com", "465", "pop3", "smtp", "javax.net.ssl.SSLSocketFactory");
-            mailserver.initMailServer();
             Properties properties = mailserver.getProperties();
             final PasswordAuthentication passwordAuthentication = new PasswordAuthentication(from.getEmail(), from.getPassword());
             Session session = Session.getDefaultInstance(properties, new Authenticator(){

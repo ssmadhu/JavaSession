@@ -20,6 +20,7 @@ public class MailServer {
         this.storePrototcol = storePrototcol;
         this.transportProtocol = transportProtocol;
         this.sslFactory = sslFactory;
+        initMailServer();
     }
 
     public void initMailServer(){
