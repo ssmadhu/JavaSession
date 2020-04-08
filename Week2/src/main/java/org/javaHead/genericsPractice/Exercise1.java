@@ -41,6 +41,7 @@ public class Exercise1 {
         e.add(5);
 
 
+//        d = e
         //Generics with wild card
 
 //        List<? extends Number> myList = new ArrayList<>();
@@ -56,6 +57,7 @@ public class Exercise1 {
 
 
         // Not allowed - static, Exception, Primitive, object creation
+
 
     }
 
