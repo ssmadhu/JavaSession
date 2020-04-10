@@ -1,0 +1,8 @@
+com\servletPractice\model\User.class
+com\servletPractice\service\UserService.class
+com\servletPractice\servlets\LoginServlet.class
+com\servletPractice\service\CourseService.class
+com\servletPractice\servlets\UserViewServlet.class
+com\servletPractice\model\Course.class
+com\servletPractice\servlets\UserPurchaseServlet.class
+com\servletPractice\model\UserType.class

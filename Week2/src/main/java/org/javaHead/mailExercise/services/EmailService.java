@@ -10,6 +10,20 @@ import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
 public class EmailService {
+
+
+    public EmailService() {
+
+    }
+
+    public static EmailService getService() {
+        EmailService service = null;
+        if(service == null) {
+            service = new EmailService();
+        }
+        return service;
+    }
+
     public void sendEmail(EmailInfo emailInfo, User from, User to){
         try {
             MailServer mailserver = new MailServer("smtp.gmail.com", "465", "pop3", "smtp", "javax.net.ssl.SSLSocketFactory");
